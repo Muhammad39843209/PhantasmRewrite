@@ -1,6 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad39843209/PhantasmRewrite/main/PhantasmRewrite.lua"))()
-local gui = Instance.new("ScreenGui", game.CoreGui)
-local frame = Instance.new("Frame", gui)
-frame.Size = UDim2.new(0, 200, 0, 100)
-frame.Position = UDim2.new(0.5, -100, 0.5, -50)
-frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+wait(2) -- Tunggu 2 detik agar UI bisa muncul
